@@ -92,18 +92,22 @@ HDI_Predictor/
 
 ## 📷 Screenshots
 
+
 ### 🏠 Home Page
 
+![Home Page](screenshots/home_page.png)
 
-C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\home_page.png
+---
 
 ### 📊 Prediction Result (Very High)
 
-C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\very_high_prediction.png
+![Very High Prediction](screenshots/very_high_prediction.png)
+
+---
 
 ### 📊 Prediction Result (Medium)
 
-C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\medium_prediction.png
+![Medium Prediction](screenshots/medium_prediction.png)
 
 
 
