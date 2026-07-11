@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">🌍 Prediction Result</h1>
+
+        <p class="subtitle">
+            Human Development Index (HDI)
+        </p>
+
+        <div class="score">
+            {{ prediction }}
+        </div>
+
+        {% if prediction >= 0.800 %}
+
+        <div class="category" style="color:#00ff88;">
+            🟢 Very High Human Development
+        </div>
+
+        <div class="info">
+            <p>✅ Excellent healthcare system</p>
+            <p>✅ High quality education</p>
+            <p>✅ Strong economy</p>
+            <p>✅ High standard of living</p>
+        </div>
+
+        {% elif prediction >= 0.700 %}
+
+        <div class="category" style="color:#5bc0ff;">
+            🔵 High Human Development
+        </div>
+
+        <div class="info">
+            <p>✔ Good education</p>
+            <p>✔ Better healthcare</p>
+            <p>✔ Stable economy</p>
+        </div>
+
+        {% elif prediction >= 0.550 %}
+
+        <div class="category" style="color:#ffcc00;">
+            🟡 Medium Human Development
+        </div>
+
+        <div class="info">
+            <p>✔ Improving education</p>
+            <p>✔ Developing healthcare</p>
+            <p>✔ Growing economy</p>
+        </div>
+
+        {% else %}
+
+        <div class="category" style="color:#ff4d4d;">
+            🔴 Low Human Development
+        </div>
+
+        <div class="info">
+            <p>✔ Needs better education</p>
+            <p>✔ Needs improved healthcare</p>
+            <p>✔ Economic development required</p>
+        </div>
+
+        {% endif %}
+
+        <div class="progress">
+
+            <div class="progress-bar" style="width: {{ prediction * 100 }}%;">
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:15px;">
+
+            <h2>{{ (prediction * 100)|round(1) }}%</h2>
+
+        </div>
+
+        <br>
+
+        <a href="/">
+            <button>
+                🔄 Predict Again
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>

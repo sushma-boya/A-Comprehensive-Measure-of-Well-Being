@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI Predictor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="title">🌍 HDI Predictor</h1>
+
+        <p class="subtitle">
+            Predict the <strong>Human Development Index (HDI)</strong> using
+            Machine Learning.
+        </p>
+
+
+        <!-- <div class="info">
+           <p>🌍 Predict the Human Development Index using Machine Learning.</p>
+           <p>📊 Based on Life Expectancy, Education, and GNI Per Capita.</p>
+           <p>🤖 Powered by Python, Scikit-learn, and Flask.</p> -->
+       <!-- </div> --> 
+        <form action="/predict" method="POST">
+
+            <div class="input-group">
+                <label>Life Expectancy at Birth</label>
+                <input type="number" step="0.01" name="life" placeholder="Example: 72.5" required>
+            </div>
+
+            <div class="input-group">
+                <label>Expected Years of Schooling</label>
+                <input type="number" step="0.01" name="expected" placeholder="Example: 14.2" required>
+            </div>
+
+            <div class="input-group">
+                <label>Mean Years of Schooling</label>
+                <input type="number" step="0.01" name="mean" placeholder="Example: 9.8" required>
+            </div>
+
+            <div class="input-group">
+                <label>Gross National Income (GNI) Per Capita</label>
+                <input type="number" step="0.01" name="gni" placeholder="Example: 18250" required>
+            </div>
+
+            <button type="submit">
+                🚀 Predict HDI
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
