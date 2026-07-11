@@ -94,17 +94,18 @@ HDI_Predictor/
 
 ### 🏠 Home Page
 
-*(Add `screenshots/home_page.png` here after uploading to GitHub.)*
+
+C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\home_page.png
 
 ### 📊 Prediction Result (Very High)
 
-*(Add `screenshots/very_high_prediction.png` here.)*
+C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\very_high_prediction.png
 
 ### 📊 Prediction Result (Medium)
 
-*(Add `screenshots/medium_prediction.png` here.)*
+C:\Users\B. Sushma\OneDrive\HDI_predictor\screenshots\medium_prediction.png
 
----
+
 
 ## ⚙️ Installation
 
