@@ -11,7 +11,7 @@ The project demonstrates the complete Machine Learning workflow—from data prep
 This application allows users to enter four socio-economic indicators and instantly predicts the Human Development Index (HDI) using a trained Linear Regression model.
 
 ---
-# Demo Video link: https://drive.google.com/file/d/17Jk65Mydfd6SJOCyreWTRBSWzSnxHDo8/view?usp=sharing
+
 ## 🚀 Features
 
 - 📊 Exploratory Data Analysis (EDA)
